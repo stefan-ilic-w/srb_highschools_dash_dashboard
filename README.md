@@ -42,11 +42,10 @@ The High-Schools Dashboard for Serbia offers valuable insights to various stakeh
 This project showcases a wide range of skills, from data collection and cleaning to database management and web application development. It is a valuable addition to a portfolio, demonstrating expertise in data processing and visualization, database modeling, and full-stack web development.
 
 Technologies Used:
-
-Python (BeautifulSoup, Pandas, SQLAlchemy)
-Plotly Dash
-Azure SQL Database
-Azure Web App Service
+1. Python (BeautifulSoup, Pandas, NumPy, GeoPy, SQLAlchemy)
+2. Plotly Dash
+3. Azure SQL Database
+4. Azure Web App Service
 
 Future Enhancements:
 In the future, the project can be expanded with additional more advanced data analysis capabilities, further enhancing its value to users.
