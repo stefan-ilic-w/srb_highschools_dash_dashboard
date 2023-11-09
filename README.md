@@ -27,10 +27,15 @@ The completed web application was deployed to an Azure web app server, making it
 Key Features:
 
 Interactive Dashboard: Users can explore high-school data through interactive charts and graphs.
+
 Historical Overview: The application provides historical insights into aspects such as location, size, educational programs, and student demographics.
+
 Azure SQL Integration: The data is sourced from and stored in an Azure SQL database, ensuring data reliability and scalability.
+
 Data Modeling: A well-structured data model underpins the application, enabling efficient data retrieval and presentation.
+
 User Experience: The project emphasizes a user-friendly experience, with a focus on data visualization and accessibility.
+
 Benefits:
 The High-Schools Dashboard for Serbia offers valuable insights to various stakeholders, including educational authorities, parents, and students. It provides an easy-to-navigate platform for understanding trends and patterns within the high-school landscape, aiding in data-informed decision-making.
 
