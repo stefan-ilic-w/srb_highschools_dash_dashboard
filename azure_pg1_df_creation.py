@@ -5,7 +5,7 @@ from sqlalchemy.engine import URL, create_engine
 from sqlalchemy.pool import NullPool
 import os
 
-connection_string = os.environ["AZURE_SQL_SREDNJE_EDU"]
+connection_string = os.environ.get("AZURE_SQL_SREDNJE_EDU")
 db_type = "mssql+pyodbc"
 
 def local_conn(conn_str=connection_string, db_type=db_type):
