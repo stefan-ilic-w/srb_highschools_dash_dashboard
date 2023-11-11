@@ -5,7 +5,7 @@ from sqlalchemy.engine import URL, create_engine
 from sqlalchemy.pool import NullPool
 import os
 
-connection_string = os.environ.get("AZURE_SQL_SREDNJE_EDU")
+connection_string = "Driver={ODBC Driver 18 for SQL Server};Server=tcp:stefan-db.database.windows.net,1433;Database=srednja_edu;Uid=stefanilic;Pwd=Microlemon01!;Encrypt=yes;TrustServerCertificate=no;Connection Timeout=30;"
 db_type = "mssql+pyodbc"
 
 def local_conn(conn_str=connection_string, db_type=db_type):
