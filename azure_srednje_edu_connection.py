@@ -9,7 +9,3 @@ connection_url = URL.create("mssql+pyodbc", query={"odbc_connect": connection_st
 
 engine = create_engine(connection_url, echo=True, poolclass=NullPool).execution_options(
     isolation_level="AUTOCOMMIT")
-
-print("""Successful connection to the server.
-Uspešno povezivanje s serverom.\n""")
-
