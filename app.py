@@ -4,6 +4,9 @@ import dash_bootstrap_components as dbc
 from dash.dependencies import Output, Input
 from azure_pg1_df_creation import pg1_df_creation
 from flask import Flask
+import os
+
+mapbox_token = os.environ.get("APPSETTING_MAPBOX_TOKEN")
 
 map_df, osn_info_df, dod_info_df, razredi_df = pg1_df_creation()
 
@@ -77,7 +80,7 @@ def update_graph(option_slctd):
     dff = dff[dff["godina_osnivanja"] <= option_slctd]
 
     # Plotly Express
-    px.set_mapbox_access_token(open("mapbox_token").read())
+    px.set_mapbox_access_token(mapbox_token)
     title = f"Школе основане у Републици Србији до {option_slctd}. године."
     fig = px.scatter_mapbox(dff
                           , lat="latitude"
