@@ -300,4 +300,4 @@ def update_t3(clickData, option_slctd):
     return dt_t3
 # ------------------------------------------------------------------------------
 if __name__ == "__main__":
-    dash_app.run(host="0.0.0.0", port=80, debug=True)
+    dash_app.run(host="0.0.0.0", port=8000, debug=True)
