@@ -3,10 +3,13 @@ from dash import Dash, dcc, html, Input, Output, callback, dash_table
 import dash_bootstrap_components as dbc
 from dash.dependencies import Output, Input
 from azure_pg1_df_creation import pg1_df_creation
+from flask import Flask
 
 map_df, osn_info_df, dod_info_df, razredi_df = pg1_df_creation()
 
-dash_app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+flask_server = Flask(__name__)
+dash_app = Dash(__name__, server=flask_server, external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = dash_app.server
 
 dash_app.layout = dbc.Container([
     dcc.Location(id='location'),
