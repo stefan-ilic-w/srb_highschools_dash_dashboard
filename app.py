@@ -8,7 +8,7 @@ map_df, osn_info_df, dod_info_df, razredi_df = pg1_df_creation()
 
 dash_app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-app.layout = dbc.Container([
+dash_app.layout = dbc.Container([
     dcc.Location(id='location'),
     # Row for the title
     dbc.Row([
