@@ -6,7 +6,7 @@ from azure_pg1_df_creation import pg1_df_creation
 
 map_df, osn_info_df, dod_info_df, razredi_df = pg1_df_creation()
 
-app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+dash_app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 app.layout = dbc.Container([
     dcc.Location(id='location'),
@@ -300,4 +300,4 @@ def update_t3(clickData, option_slctd):
     return dt_t3
 # ------------------------------------------------------------------------------
 if __name__ == "__main__":
-    app.run()
+    dash_app.run()
